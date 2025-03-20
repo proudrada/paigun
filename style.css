@@ -1,128 +1,151 @@
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #111;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
   }
   
   header {
-    background-color: #222;
+    background-color: #002244;
     color: #fff;
-    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+  }
+  
+  header .logo {
+    font-size: 20px;
+    font-weight: bold;
   }
   
   header nav a {
     color: #fff;
     margin-left: 15px;
     text-decoration: none;
+    font-size: 14px;
   }
   
-  .container {
+  .main-banner {
+    width: 100%;
+    height: 300px;
+    background: url('https://via.placeholder.com/1200x300/cc0000/ffffff?text=THAMMASAT+FAIR+2') center/cover no-repeat;
+    color: #fff;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    justify-content: flex-end;
     padding: 20px;
-    background-color: #000;
-  }
-  
-  .card {
-    background: #f0f8ff;
-    border-radius: 10px;
-    width: 350px;
-    padding: 20px;
-  }
-  
-  .logo {
     font-size: 24px;
     font-weight: bold;
   }
   
-  .search-bar {
-    margin: 10px 0;
-    display: flex;
-    gap: 10px;
+  .search-section {
+    background-color: #cceeff;
+    padding: 15px;
+    text-align: center;
   }
   
-  .search-bar input,
-  .search-bar select {
-    padding: 5px;
-    flex: 1;
+  .search-section input,
+  .search-section select {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
   }
   
-  .banner {
-    width: 100%;
-    height: 200px;
-    background-color: #cc0000;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    margin-bottom: 10px;
+  .recommend-section {
+    background-color: #e6f7ff;
+    padding: 20px;
   }
   
-  .recommendations {
+  .recommend-section h2 {
+    margin-bottom: 15px;
+  }
+  
+  .recommend-items {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     overflow-x: auto;
   }
   
-  .recommendations .item {
+  .recommend-items .item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
     flex: 0 0 auto;
-    background: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    width: 150px;
     text-align: center;
   }
   
-  .recommendations img {
+  .recommend-items .item img {
     width: 100%;
-    border-radius: 5px;
-  }
-  
-  h2 {
-    margin-top: 0;
-  }
-  
-  .search-results {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  
-  .result-item {
-    background: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .event-detail {
-    background: #fff;
-    padding: 10px;
     border-radius: 8px;
   }
   
-  .event-detail img {
+  .results-banner {
     width: 100%;
-    border-radius: 5px;
-  }
-  
-  .section-title {
+    height: 200px;
+    background: url('https://via.placeholder.com/1200x200/ffcc00/000000?text=Search+Result') center/cover no-repeat;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 5px;
+  }
+  
+  .results-grid {
+    background-color: #e6f7ff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  
+  .results-grid .result-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .results-grid .result-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .detail-section {
+    background-color: #e6f7ff;
+    padding: 20px;
+  }
+  
+  .detail-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .detail-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .detail-card h2 {
+    margin-top: 15px;
+  }
+  
+  .detail-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .detail-card ul li {
+    padding: 5px 0;
   }
   
   footer {
-    background: #222;
+    background-color: #002244;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
   }
   
