@@ -5,8 +5,8 @@ body {
   }
   
   header {
-    background-color: #002244;
-    color: #fff;
+    background-color: #FFFBBE;
+    color: #4B6F91;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@ body {
   }
   
   header nav a {
-    color: #fff;
+    color: #4B6F91;
     margin-left: 15px;
     text-decoration: none;
     font-size: 14px;
@@ -28,7 +28,7 @@ body {
   .main-banner {
     width: 100%;
     height: 300px;
-    background: url('https://via.placeholder.com/1200x300/cc0000/ffffff?text=THAMMASAT+FAIR+2') center/cover no-repeat;
+    background: url('Picture/TUFair.jpg') center/cover no-repeat;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -37,6 +37,7 @@ body {
     font-size: 24px;
     font-weight: bold;
   }
+  
   
   .search-section {
     background-color: #cceeff;
