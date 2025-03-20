@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: #333;
+  }
+  
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #000;
+  }
+  
+  .card {
+    background: #f0f8ff;
+    border-radius: 10px;
+    width: 350px;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .search-bar {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-bar input,
+  .search-bar select {
+    padding: 5px;
+    flex: 1;
+  }
+  
+  .banner {
+    width: 100%;
+    height: 200px;
+    background-color: #cc0000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .recommendations {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+  }
+  
+  .recommendations .item {
+    flex: 0 0 auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .recommendations img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .search-results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .result-item {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .event-detail {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .event-detail img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .section-title {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  
