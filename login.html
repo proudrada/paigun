@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="container-fluid login-container d-flex">
+  <div class="row flex-grow-1 w-100">
+    <!-- Left Side -->
+    <div class="col-md-6 d-flex align-items-center justify-content-center">
+      <div class="login-form w-75">
+        <img src="Picture/logo.jpg" alt="Logo" class="mb-4" style="width: 120px; height: auto;"/>
+        <h2 class="mb-1 fw-bold">Welcome back</h2>
+        <p class="text-muted mb-4">Please enter your details</p>
+
+        <div class="google-btn d-flex align-items-center justify-content-center">
+          <img src="https://img.icons8.com/color/16/000000/google-logo.png"/>
+          Sign in with Google
+        </div>
+
+        <div class="text-center text-muted mb-3">or</div>
+
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control" placeholder="Enter your email"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Enter your password"/>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="remember"/>
+              <label class="form-check-label" for="remember">Remember password</label>
+            </div>
+            <a href="#" class="text-decoration-none text-primary">Forgot password</a>
+          </div>
+
+          <button class="btn btn-dark w-100 mb-3">Sign in</button>
+          <p class="text-center">Don't have an account? <a href="#" class="text-decoration-none text-primary">Sign up</a></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <img src="Picture/thai.jpg" alt="Right Side Image" class="img-fluid custom-img">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

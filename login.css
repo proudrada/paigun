@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+  }
+  
+  .login-container {
+    min-height: 100vh;
+  }
+  
+  .login-form {
+    padding: 40px;
+    background: #fff;
+  }
+  
+  .google-btn {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .google-btn img {
+    height: 18px;
+    margin-right: 8px;
+  }
+  
+  .form-control,
+  .btn {
+    border-radius: 6px;
+  }
+  
+  .right-panel h2 {
+    font-weight: bold;
+  }
+
+  .custom-img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  
+  
