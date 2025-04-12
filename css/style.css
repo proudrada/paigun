@@ -100,15 +100,6 @@
 
 
 /*** Header ***/
-.carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(15, 23, 43, .7);
-    z-index: 1;
-}
-
 .carousel-control-prev,
 .carousel-control-next {
     width: 10%;
@@ -191,7 +182,7 @@
 
 /*** Categories ***/
 .service-item {
-    height: 320px;
+    height: 200px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -227,15 +218,10 @@
 
 
 /*** Footer ***/
-.newsletter {
-    position: relative;
-    z-index: 1;
-}
-
 .footer {
     position: relative;
-    margin-top: -110px;
-    padding-top: 180px;
+    margin-top: 70px;
+    padding-top: 100px;
 }
 
 .footer .btn.btn-social {
