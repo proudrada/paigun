@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
     --primary: #FEA116;
-    --light: #F1F8FF;
+    --light: #f3ede1;
     --dark: #0F172B;
 }
 
@@ -46,7 +46,7 @@
 
 .btn.btn-primary,
 .btn.btn-secondary {
-    color: #FFFFFF;
+    color: #f3ede1;
 }
 
 .btn-square {
@@ -80,7 +80,7 @@
 .navbar-dark .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: #FFFFFF;
+    color: #f3ede1;
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
@@ -188,7 +188,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background: #FFFFFF;
+    background: #eeebdb;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     transition: .5s;
 }

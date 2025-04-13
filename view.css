@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Card Container */
+  .card-wrapper {
+    background: linear-gradient(to bottom right, #6e4b23, #a8a6a3);
+    display: flex;
+    width: 100%;
+    max-width: 2200px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    padding: 70px;
+  }
+  
+  /* Image Section */
+  .image-section {
+    height: 500px; /* Match .glass-panel */
+    width: auto;
+    display: flex;
+    align-items: stretch; /* Stretch to full height */
+    justify-content: center;
+  }
+  
+  .image-section img {
+    height: 100%; /* Force image to fill container */
+    width: auto;
+    object-fit: cover;
+    padding: 0; /* Remove padding that might shrink image */
+  }
+  
+  
+  /* Glass Panel */
+  .glass-panel {
+    flex: 1;
+    padding: 40px;
+    height: 500px;
+    background: rgba(255, 254, 254, 0.64);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    color: #000;
+  }
+  
+  /* Text Elements */
+  .category {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .event-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  .details p {
+    font-size: 16px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    min-width: 24px;
+    text-align: center;
+  }
+  
+  .sub-location {
+    font-size: 14px;
+    color: #555;
+    margin-left: 34px;
+  }
+  
+  /* Buttons */
+  .buttons {
+    margin-top: 30px;
+  }
+  
+  .btn-outline {
+    padding: 10px 16px;
+    border: 1.5px solid #000;
+    background: transparent;
+    color: #000;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 12px;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .btn-outline:hover {
+    background: #000;
+    color: #fff;
+  }
+  
+  /* Icon Color Utility */
+  .text-primary {
+    color: #007bff;
+  }
+  
+  /* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #0F172B;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    opacity: 0.6;
+    margin-right: 6px;
+  }
+  
+  .ticket-btn {
+    background-color: #FEA116;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* Workshop Details */
+  .workshop-details {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .workshop-details h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .workshop-details ul {
+    list-style: none;
+  }
+  
+  .workshop-details li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    min-width: 24px;
+    text-align: center;
+  }
+  
+  /* Utility Colors */
+  .text-warning {
+    color: #f0ad4e;
+  }
+  
+  .text-danger {
+    color: #dc3545;
+  }
