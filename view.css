@@ -122,17 +122,6 @@
     padding: 20px;
   }
   
-  .price {
-    font-weight: bold;
-    color: #0F172B;
-  }
-  
-  .old-price {
-    text-decoration: line-through;
-    opacity: 0.6;
-    margin-right: 6px;
-  }
-  
   .ticket-btn {
     background-color: #FEA116;
     color: white;
@@ -143,7 +132,7 @@
     align-items: center;
     gap: 8px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 18px;
   }
   
   /* Workshop Details */
@@ -156,6 +145,8 @@
   .workshop-details h2 {
     font-weight: bold;
     margin-bottom: 15px;
+    color: #6e4b23;
+    font-size: 40px;  
   }
   
   .workshop-details ul {
