@@ -143,26 +143,58 @@
   }
   
   .workshop-details h2 {
+    padding: 20px; 
     font-weight: bold;
     margin-bottom: 15px;
     color: #6e4b23;
-    font-size: 40px;  
+    font-size: 40px; 
+    text-align: center; 
   }
   
-  .workshop-details ul {
-    list-style: none;
-  }
-  
-  .workshop-details li {
-    margin-bottom: 12px;
-    display: flex;
-    align-items: flex-start;
-  }
-  
-  .icon {
-    margin-right: 8px;
-    min-width: 24px;
+  .workshop-details h3 {
     text-align: center;
+  }
+
+  .workshop-details p {
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .box {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+  }
+  
+  .section {
+    background-color: #d5f0f7;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .section h3 {
+    margin-top: 0;
+    color: #003366;
+    text-align: center;
+  }
+  
+  ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+  
+  .bottom {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #00a0c6;
+    border-bottom: 2px solid #00a0c6;
+    border-radius: 10px;
   }
   
   /* Utility Colors */
