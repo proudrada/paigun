@@ -74,7 +74,7 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
-                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="index.html" class="nav-item nav-link">Home</a>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Event</a>
                                     <div class="dropdown-menu rounded-0 m-0">
@@ -84,7 +84,7 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Workshop</a>
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destination</a>
                                 <a href="calendar.html" class="nav-item nav-link">Calendar</a>
-                                <a href="organizer.html" class="nav-item nav-link">Organizer</a>
+                                <a href="organizer.html" class="nav-item nav-link active">Organizer</a>
                             </div>
                             <div class="d-flex align-items-center">
                                 <a href="#" class="nav-item nav-link text-white text-decoration-underline me-4">EN</a>
@@ -115,59 +115,159 @@
         
                 <div class="form-section">
                   <h2>Details</h2>
+                
                   <label>Event Name*</label>
                   <input type="text" />
-        
-                  <label>Categories</label>
-                  <input type="text" />
-        
-                  <label>Event Types</label>
-                  <input type="text" />
+                
+                  <label>Types*</label>
+                  <select>
+                    <option value="">Select a Types</option>
+                    <option value="Event">Event</option>
+                    <option value="Workshop">Workshop</option>
+                    <option value="Destination">Destination</option>
+                  </select>
+                
+                  <label>Categories*</label>
+                  <select>
+                    <option value="">Select a Categories</option>
+                    <option value="Art">Art</option>
+                    <option value="Culture & Festival">Culture & Festival</option>
+                    <option value="Education">Education</option>
+                    <option value="Expo">Expo</option>
+                    <option value="Food & Beverage">Food & Beverage</option>
+                    <option value="Health">Health</option>
+                    <option value="Local">Local</option>
+                    <option value="Nature">Nature</option>
+                    <option value="Religion">Religion</option>
+                    <option value="Spa & Wellness">Spa & Wellness</option>
+                    <option value="Sports">Sports</option>
+                  </select>
+
+                  <label>Event Information*</label>
+                  <textarea rows="4" style="resize: vertical;"></textarea>
                 </div>
         
                 <div class="form-section">
                   <h2>Date and Time</h2>
                   <div class="tab-select">
-                    <button class="active">Specific Date</button>
-                    <button>To Be Announced</button>
+                    <button class="tab-button active" data-tab="specific">Specific Date</button>
+                    <button class="tab-button" data-tab="tba">To Be Announced</button>
                   </div>
-                  <div class="date-time-row">
-                    <div>
-                      <label>Start at date*</label>
-                      <input type="date" value="2025-04-22" />
+                
+                  <div id="specific-date-section">
+                    <div class="date-time-row">
+                      <div>
+                        <label>Start at date*</label>
+                        <input type="date"/>
+                      </div>
+                      <div>
+                        <label>Time</label>
+                        <input type="time"/>
+                      </div>
                     </div>
-                    <div>
-                      <label>Time</label>
-                      <input type="time" value="09:00" />
+                    <div class="date-time-row">
+                      <div>
+                        <label>End at date*</label>
+                        <input type="date"/>
+                      </div>
+                      <div>
+                        <label>Time</label>
+                        <input type="time"/>
+                      </div>
                     </div>
-                  </div>
-                  <div class="date-time-row">
-                    <div>
-                      <label>End at date*</label>
-                      <input type="date" value="2025-04-22" />
+                    <div class="checkboxes">
+                      <label><input type="checkbox" /> Display end at time</label>
+                      <label><input type="checkbox" /> Display time</label>
                     </div>
-                    <div>
-                      <label>Time</label>
-                      <input type="time" value="12:00" />
-                    </div>
-                  </div>
-                  <div class="checkboxes">
-                    <label><input type="checkbox" checked /> Display end at time</label>
-                    <label><input type="checkbox" checked /> Display time</label>
                   </div>
                 </div>
+                
+                <script>
+                  const buttons = document.querySelectorAll('.tab-button');
+                  const specificDateSection = document.getElementById('specific-date-section');
+                
+                  buttons.forEach(button => {
+                    button.addEventListener('click', () => {
+                      // Toggle active class
+                      buttons.forEach(btn => btn.classList.remove('active'));
+                      button.classList.add('active');
+                
+                      // Show or hide the specific date section
+                      if (button.dataset.tab === 'specific') {
+                        specificDateSection.style.display = 'block';
+                      } else {
+                        specificDateSection.style.display = 'none';
+                      }
+                    });
+                  });
+                </script>
         
-                <div class="form-section">
-                  <h2>Location</h2>
-                  <div class="tab-select">
-                    <button class="active">Venue</button>
-                    <button>Online</button>
-                  </div>
-                  <div class="tab-select small">
-                    <button><span>📍</span> Add Location</button>
-                    <button><span>🕒</span> To Be Announced</button>
-                  </div>
-                </div>
+        <div class="form-section">
+          <h2>Location</h2>
+        
+          <!-- Venue / Online Tabs -->
+          <div class="tab-select">
+            <button class="tab-button active" data-tab="venue">Venue</button>
+            <button class="tab-button" data-tab="online">Online</button>
+          </div>
+        
+          <!-- Conditional Sections -->
+          <div id="venue-section">
+            <div class="tab-select small">
+              <button id="add-location-btn">
+                <i class="fas fa-map-marker-alt icon text-dark"></i> Add Location
+              </button>
+              <button id="tba-location-btn">
+                <i class="fas fa-clock icon text-dark"></i> To Be Announced
+              </button>
+            </div>
+            <div id="location-input" style="margin-top: 10px; display: none;">
+              <label>Location*</label>
+              <input type="text" placeholder="Enter location" />
+            </div>
+          </div>
+        
+          <div id="online-section" style="display: none; margin-top: 10px;">
+            <label>Online Event URL*</label>
+            <input type="text" placeholder="https://..." />
+          </div>
+        </div>
+        
+        <script>
+          // Venue/Online tab toggle
+          const tabButtons = document.querySelectorAll('.tab-button');
+          const venueSection = document.getElementById('venue-section');
+          const onlineSection = document.getElementById('online-section');
+        
+          tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+              tabButtons.forEach(btn => btn.classList.remove('active'));
+              button.classList.add('active');
+        
+              if (button.dataset.tab === 'venue') {
+                venueSection.style.display = 'block';
+                onlineSection.style.display = 'none';
+              } else {
+                venueSection.style.display = 'none';
+                onlineSection.style.display = 'block';
+              }
+            });
+          });
+        
+          // Add Location / TBA toggle
+          const addLocationBtn = document.getElementById('add-location-btn');
+          const tbaLocationBtn = document.getElementById('tba-location-btn');
+          const locationInput = document.getElementById('location-input');
+        
+          addLocationBtn.addEventListener('click', () => {
+            locationInput.style.display = 'block';
+          });
+        
+          tbaLocationBtn.addEventListener('click', () => {
+            locationInput.style.display = 'none';
+          });
+        </script>
+        
         
                 <button class="save-btn">Save</button>
               </div>
@@ -221,14 +321,6 @@
                         <a class="btn btn-link" href="">Terms & Condition</a>
                         <a class="btn btn-link" href="">Support</a>
                     </div>
-                    <!-- <div class="col-md-6">
-                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                        <a class="btn btn-link" href="">Food & Restaurant</a>
-                        <a class="btn btn-link" href="">Spa & Fitness</a>
-                        <a class="btn btn-link" href="">Sports & Gaming</a>
-                        <a class="btn btn-link" href="">Event & Party</a>
-                        <a class="btn btn-link" href="">GYM & Yoga</a>
-                    </div> -->
                 </div>
             </div>
         </div>
